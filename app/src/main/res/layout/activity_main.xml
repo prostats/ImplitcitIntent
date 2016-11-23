@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bit2016.implitcitintent.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="암시적 인텐트 사용하기"
+        android:id="@+id/textView"
+        android:layout_marginTop="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="전화걸기"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/button_call"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Share Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_share"
+        android:layout_below="@+id/button_map"
+        android:layout_alignStart="@+id/button_map" />
+
+    <Button
+        android:text="지도"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_map"
+        android:layout_below="@+id/button_search"
+        android:layout_alignStart="@+id/button_search" />
+
+    <Button
+        android:text="검색"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_search"
+        android:layout_below="@+id/button_web"
+        android:layout_alignStart="@+id/button_web" />
+
+    <Button
+        android:text="웹이동"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_web"
+        android:layout_below="@+id/button_address"
+        android:layout_alignStart="@+id/button_address" />
+
+    <Button
+        android:text="주소록"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_address"
+        android:layout_below="@+id/button_call"
+        android:layout_alignStart="@+id/button_call" />
+
+</RelativeLayout>
